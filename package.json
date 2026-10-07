@@ -1,0 +1,25 @@
+{
+  "name": "js-2026",
+  "version": "1.0.0",
+  "description": "Учебный репозиторий по JavaScript: примеры, задачи и решения",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "npm run lint:js && npm run lint:html",
+    "lint:js": "eslint .",
+    "lint:html": "htmlhint \"**/*.html\"",
+    "fix": "prettier --write . && eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0",
+    "htmlhint": "^1.9.2",
+    "prettier": "^3.9.9"
+  }
+}
