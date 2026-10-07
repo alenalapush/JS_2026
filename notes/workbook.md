@@ -1,4 +1,3 @@
-
 <script>
     let name = "мир";
     alert(`Привет, ${name}`);
