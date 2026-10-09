@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <body>
+    <p>Перед скриптом...</p>
+    <script>
+      'use strict';
+
+      let t = 10;
+      for (let n = 2; n <= t; n++) {
+        let m = 2;
+        while (n % m != 0) m++;
+        if (m == n) {
+          alert(n);
+        }
+      }
+    </script>
+    <p>...После скрипта.</p>
+  </body>
+</html>
