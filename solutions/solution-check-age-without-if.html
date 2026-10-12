@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <body>
+    <p>Перед скриптом...</p>
+    <script>
+      'use strict';
+
+      function checkAgeTernary(age) {
+        return age > 18 ? true : confirm('Родители разрешили?');
+      }
+
+      function checkAgeOr(age) {
+        return age > 18 || confirm('Родители разрешили?');
+      }
+    </script>
+    <p>...После скрипта.</p>
+  </body>
+</html>
