@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <body>
+    <p>Перед скриптом...</p>
+    <script>
+      'use strict';
+
+      const ask = (question, yes, no) => {
+        if (confirm(question)) yes();
+        else no();
+      };
+
+      ask(
+        'Вы согласны?',
+        () => alert('Вы согласились.'),
+        () => alert('Вы отменили выполнение.')
+      );
+    </script>
+    <p>...После скрипта.</p>
+  </body>
+</html>
