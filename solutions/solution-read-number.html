@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <body>
+    <p>Перед скриптом...</p>
+    <script>
+      'use strict';
+
+      function readNumber() {
+        let num = prompt('Введите число:', '');
+
+        while (num !== null && num !== '' && isNaN(num)) {
+          num = prompt('Введите число:', '');
+        }
+
+        if (num === null || num === '') {
+          return null; // отмена или пусто
+        }
+
+        return +num; // превращаем строку в число
+      }
+    </script>
+    <p>...После скрипта.</p>
+  </body>
+</html>
